@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import SingleAuthor from '../SingleAuthor/SingleAuthor';
 
-const Main = () => {
+const Main = (props) => {
     const [authors,setAuthors] = useState([])
-
+   const totalReadTime = props.totalReadTime;
     useEffect(()=>{
         const authorsInfoFetchData = async()=> {
             const res = await fetch('data.json');
@@ -15,7 +15,7 @@ const Main = () => {
     return (
         <>
             {
-                authors.map((author)=> <SingleAuthor key={author.id} author={author}></SingleAuthor>)
+                authors.map((author)=> <SingleAuthor key={author.id} author={author} totalReadTime={totalReadTime}></SingleAuthor>)
             }
         </>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SingleAuthor = (props) => {
     const { id, author_name, author_image, blog_title, blog_cover_image, read_time, publish_Date } = props.author;
-
+    const totalReadTime = props.totalReadTime;
     return (
         <>
             <div className="card w-full bg-base-100  shadow-xl lg:mt-8 ">
@@ -37,7 +37,7 @@ const SingleAuthor = (props) => {
                         <h1 className='text-3xl font-black'>{blog_title}</h1>
                         {/* Blog Title End  */}
                     <div className="card-actions mt-3">
-                        <button className="btn btn-warning text-lg">Mark as read</button>
+                        <button className="btn btn-warning text-lg" onClick={()=>totalReadTime(read_time)}>Mark as read</button>
                     </div>
                 </div>
             </div>
