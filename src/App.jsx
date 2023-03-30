@@ -1,4 +1,5 @@
 import './App.css'
+import Header from './components/Header/Header'
 
 
 
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      I am from Empty react app 
+      <Header></Header>
     </div>
   )
 }
