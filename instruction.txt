@@ -13,8 +13,8 @@ Author image ✔️
 Read time ✔️
 Publish Date ✔️
 
-Fetch the above mentioned json file and create/show four cards with the JSON data.
-Each card will contain the information of a single blog.
+Fetch the above mentioned json file and create/show four cards with the JSON data.✔️
+Each card will contain the information of a single blog.✔️
 Initially, “Time spent on reading” will be 0. 
 After clicking on the “Mark as read” button, the read time of the selected card will be added to
 the previous time & shown on the “Time spent on read” section. No hour-minute conversion needed.

@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import SingleAuthor from '../SingleAuthor/SingleAuthor';
 
 const Main = () => {
-    const [autors,setAutors] = useState([])
+    const [authors,setAuthors] = useState([])
 
     useEffect(()=>{
-        const autorsInfoFetchData = async()=> {
+        const authorsInfoFetchData = async()=> {
             const res = await fetch('data.json');
             const data = await res.json();
-            setAutors(data);
+            setAuthors(data);
         }
-        autorsInfoFetchData()
+        authorsInfoFetchData()
     },[])
     return (
         <>
             {
-                autors.map((autor)=> console.log(autor))
+                authors.map((author)=> <SingleAuthor key={author.id} author={author}></SingleAuthor>)
             }
         </>
     );
