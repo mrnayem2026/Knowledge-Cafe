@@ -28,14 +28,15 @@ Show the title of each bookmarked blog on the right sidebar. Initially the title
 
 Bonus Requirements:
 
-Create a blog Component & use it as the last component of the page.
- Blog component must have the answers of the following questions:
-Props vs state
-How does useState work?
-Purpose of useEffect other than fetching data.
-How Does React work?
+Create a blog Component & use it as the last component of the page. ✔️
+ Blog component must have the answers of the following questions: ✔️
+Props vs state ✔️
+How does useState work? ✔️
+Purpose of useEffect other than fetching data. ✔️
+How Does React work? ✔️
 Your repository must have a minimum of 8 meaningful GitHub commits. ✔️
 You have to make the entire UI mobile responsive. ✔️
 Place the right sidebar component below the blogs component in mobile view.✔️
+
 Show a toast / sweetalert with a suitable message if user tries to bookmark a blog more than once. e.g.,
  “You Have Already Bookmarked This Blog” . You can’t use browser alert.

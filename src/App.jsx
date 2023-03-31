@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import LeftSide from './components/LeftSide/LeftSide'
 import Main from './components/Main/Main'
+import Blog from './components/Blog/Blog'
 
 
 
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Main></Main>
+      <Blog></Blog>
 
 
       {/*     

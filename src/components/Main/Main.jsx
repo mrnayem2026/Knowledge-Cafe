@@ -6,6 +6,7 @@ import { addToDb } from '../../assets/utilities/fakedb';
 const Main = () => {
     const [authors, setAuthors] = useState([])
     const [titels,setTitels] = useState([])
+    const [toasty,setToasty] = useState(0)
     useEffect(() => {
         const authorsInfoFetchData = async () => {
             const res = await fetch('data.json');
@@ -28,10 +29,10 @@ const Main = () => {
       }
     }
   
-    const blogTitle =(title)=>{
-        // console.log(title.id);
+    const blogTitle =(title,toast)=>{
         addToDb(title.id)
         let selectTitles = [...titels,title];
+        setToasty(toast);
         setTitels(selectTitles)
     }
 
@@ -45,7 +46,7 @@ const Main = () => {
                 </div>
 
                 <div className='lg:col-span-4'>
-                    <LeftSide readTime={readTime} titels={titels}></LeftSide>
+                    <LeftSide readTime={readTime} titels={titels} toasty={toasty}></LeftSide>
                 </div>
             </div>
         </>
