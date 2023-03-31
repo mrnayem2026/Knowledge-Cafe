@@ -20,10 +20,10 @@ After clicking on the “Mark as read” button, the read time of the selected c
 the previous time & shown on the “Time spent on read” section.✔️
 No hour-minute conversion needed.✔️
 More than 1 click is allowed for a single blog.✔️
-After clicking on the bookmark icon for each blog,
-update the total number of blogs added as bookmark and show it on the right sidebar. 
-Initially, it is zero. You can bookmark a blog multiple times.
-Show the title of each bookmarked blog on the right sidebar. Initially the title lists will be empty.
+After clicking on the bookmark icon for each blog,✔️
+update the total number of blogs added as bookmark and show it on the right sidebar. ✔️
+Initially, it is zero. You can bookmark a blog multiple times.✔️
+Show the title of each bookmarked blog on the right sidebar. Initially the title lists will be empty.✔️
 
 
 Bonus Requirements:
@@ -34,8 +34,8 @@ Props vs state
 How does useState work?
 Purpose of useEffect other than fetching data.
 How Does React work?
-Your repository must have a minimum of 8 meaningful GitHub commits.
-You have to make the entire UI mobile responsive. 
-Place the right sidebar component below the blogs component in mobile view.
+Your repository must have a minimum of 8 meaningful GitHub commits. ✔️
+You have to make the entire UI mobile responsive. ✔️
+Place the right sidebar component below the blogs component in mobile view.✔️
 Show a toast / sweetalert with a suitable message if user tries to bookmark a blog more than once. e.g.,
  “You Have Already Bookmarked This Blog” . You can’t use browser alert.
