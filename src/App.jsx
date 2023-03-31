@@ -7,33 +7,27 @@ import Main from './components/Main/Main'
 
 
 function App() {
-const [readTime,setReadTime] = useState(0);
-const totalReadTime =(time)=>{
-  const previousreadTime = JSON.parse(localStorage.getItem("readTime"));
-  if (previousreadTime) {
-    const sum = previousreadTime + time;
-    localStorage.setItem("readTime", sum);
-    setReadTime(sum);
-  } else {
-    localStorage.setItem("readTime", time);
-    setReadTime(time);
-  }
-}
 
 
 
   return (
     <div className="App">
       <Header></Header>
-    
+      <Main></Main>
+
+
+      {/*     
+ // Prviues 
       <div className='container mx-auto grid lg:grid-cols-12'>
         <div className='lg:col-span-8'>
-          <Main totalReadTime={totalReadTime}></Main>
+          <Main totalReadTime={totalReadTime} handleBlogTitle={handleBlogTitle}></Main>
         </div>
         <div className='lg:col-span-4'>
-          <LeftSide readTime={readTime} ></LeftSide>
+          <LeftSide readTime={readTime} arr={arr}></LeftSide>
         </div>
-      </div>
+      </div> */}
+
+
     </div>
   )
 }
